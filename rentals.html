@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rentals — Amberella Balloons</title>
+<meta name="description" content="Event rentals in the GTAH: backdrops, plinths, marquee numbers, and styled props from Amberella Balloons." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Amberella Balloons</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="rentals.html" class="active">Rentals</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color: var(--amber-deep); font-size: 0.85rem; font-weight:500; letter-spacing: 0.12em; text-transform: uppercase;">Rentals</span>
+    <h1 style="margin-top: 0.8rem;">Props, backdrops & pieces to rent.</h1>
+    <p>Great for DIY setups, photo booths, or adding a statement piece to an event we've styled for you.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="rental-list">
+
+      <div class="rental-item">
+        <div class="rental-thumb">Backdrop</div>
+        <div class="rental-body">
+          <h3>Mesh Circle Backdrop</h3>
+          <p>5ft round mesh frame — perfect for balloon garlands, florals, or signage. Freestanding.</p>
+        </div>
+      </div>
+
+      <div class="rental-item">
+        <div class="rental-thumb">Backdrop</div>
+        <div class="rental-body">
+          <h3>Arched Panel Backdrop</h3>
+          <p>Three-panel arched wall in white or neutral tones. Doubles as a photo moment or sweet-table backdrop.</p>
+        </div>
+      </div>
+
+      <div class="rental-item">
+        <div class="rental-thumb">Numbers</div>
+        <div class="rental-body">
+          <h3>Marquee Light-Up Numbers</h3>
+          <p>4ft tall illuminated numbers (0–9). Mix and match for birthdays, anniversaries, or milestone events.</p>
+        </div>
+      </div>
+
+      <div class="rental-item">
+        <div class="rental-thumb">Plinths</div>
+        <div class="rental-body">
+          <h3>Cylinder Plinth Set</h3>
+          <p>Trio of white plinths in graduated heights. Ideal for cake displays, floral arrangements, or entryway decor.</p>
+        </div>
+      </div>
+
+      <div class="rental-item">
+        <div class="rental-thumb">Display</div>
+        <div class="rental-body">
+          <h3>Sweet Table Setup</h3>
+          <p>Complete styled table with linens, risers, and decorative accents — ready for your desserts.</p>
+        </div>
+      </div>
+
+      <div class="rental-item">
+        <div class="rental-thumb">Signage</div>
+        <div class="rental-body">
+          <h3>Custom Acrylic Signs</h3>
+          <p>Personalized welcome signs, seating charts, and menus. Designed to match your theme.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="text-align: center; margin-top: 3rem; color: var(--ink-soft);">
+      Looking for something specific? <a href="contact.html">Send us a message</a> — our inventory grows often.
+    </p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Reserve what you need.</h2>
+    <p>Rentals book up quickly on weekends — get in early to lock your pieces for the date.</p>
+    <a href="contact.html" class="btn btn-primary">Check availability</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Amberella Balloons</div>
+        <p style="color: rgba(253,248,241,0.7); max-width: 36ch;">Custom balloon decor and event rentals across the Greater Toronto & Hamilton Area.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://instagram.com/amberellaballoons" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="contact.html">Book an event</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Amberella Balloons. All rights reserved.</div>
+      <div>Serving the Greater Toronto & Hamilton Area</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

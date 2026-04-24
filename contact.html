@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Amberella Balloons</title>
+<meta name="description" content="Get in touch with Amberella Balloons to book balloon decor and event rentals anywhere in the Greater Toronto & Hamilton Area." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Amberella Balloons</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta active">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color: var(--amber-deep); font-size: 0.85rem; font-weight:500; letter-spacing: 0.12em; text-transform: uppercase;">Contact</span>
+    <h1 style="margin-top: 0.8rem;">Let's plan your celebration.</h1>
+    <p>Fill in the form below and we'll get back to you with a custom quote within 24 hours.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h3>Service area</h3>
+        <p>Greater Toronto & Hamilton Area (GTAH). Travel fees may apply outside core zones.</p>
+
+        <h3>Response time</h3>
+        <p>Within 24 hours, usually sooner.</p>
+
+        <h3>Follow along</h3>
+        <p><a href="https://instagram.com/amberellaballoons" target="_blank" rel="noopener">@amberellaballoons</a></p>
+
+        <h3>Lead time</h3>
+        <p>We recommend 2–4 weeks for standard events, and 6+ weeks for weddings or large installs.</p>
+      </div>
+
+      <form class="form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <input type="hidden" name="form-name" value="contact" />
+        <p style="display:none;"><label>Don't fill this out: <input name="bot-field" /></label></p>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">Phone (optional)</label>
+            <input id="phone" name="phone" type="tel" />
+          </div>
+          <div class="field">
+            <label for="event-date">Event date</label>
+            <input id="event-date" name="event-date" type="date" />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="event-type">Event type</label>
+          <select id="event-type" name="event-type">
+            <option value="">Select one…</option>
+            <option>Birthday</option>
+            <option>Wedding</option>
+            <option>Bridal / Baby Shower</option>
+            <option>Corporate / Brand</option>
+            <option>Anniversary</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="service">What are you looking for?</label>
+          <select id="service" name="service">
+            <option value="">Select one…</option>
+            <option>Balloon arch or garland</option>
+            <option>Full party decorating</option>
+            <option>Rentals only</option>
+            <option>Not sure — help me decide</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="venue">Venue / location</label>
+          <input id="venue" name="venue" type="text" placeholder="City and venue if known" />
+        </div>
+
+        <div class="field">
+          <label for="message">Tell us about your event</label>
+          <textarea id="message" name="message" placeholder="Theme, colours, guest count, inspiration links — anything helps." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width: 100%;">Send inquiry</button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Amberella Balloons</div>
+        <p style="color: rgba(253,248,241,0.7); max-width: 36ch;">Custom balloon decor and event rentals across the Greater Toronto & Hamilton Area.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://instagram.com/amberellaballoons" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="contact.html">Book an event</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Amberella Balloons. All rights reserved.</div>
+      <div>Serving the Greater Toronto & Hamilton Area</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

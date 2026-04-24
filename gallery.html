@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gallery — Amberella Balloons</title>
+<meta name="description" content="A selection of past balloon installations, party decor, and event setups from Amberella Balloons in the GTAH." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Amberella Balloons</a>
+    <button class="nav-toggle" aria-label="Toggle menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="eyebrow" style="color: var(--amber-deep); font-size: 0.85rem; font-weight:500; letter-spacing: 0.12em; text-transform: uppercase;">Gallery</span>
+    <h1 style="margin-top: 0.8rem;">A few of our favourite moments.</h1>
+    <p>Birthdays, showers, weddings, and brand activations — a taste of what's possible.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="gallery-grid">
+      <div class="gallery-item">Birthday</div>
+      <div class="gallery-item">Wedding</div>
+      <div class="gallery-item">Shower</div>
+      <div class="gallery-item">Corporate</div>
+      <div class="gallery-item">Arch</div>
+      <div class="gallery-item">Garland</div>
+      <div class="gallery-item">Backdrop</div>
+      <div class="gallery-item">Sweet Table</div>
+      <div class="gallery-item">First Birthday</div>
+    </div>
+
+    <p style="text-align: center; margin-top: 2.5rem; color: var(--ink-soft);">
+      See more on <a href="https://instagram.com/amberellaballoons" target="_blank" rel="noopener">Instagram</a>.
+    </p>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="container">
+    <h2>Your event, your vision.</h2>
+    <p>Love one of these looks, or have something totally different in mind? Either way — let's talk.</p>
+    <a href="contact.html" class="btn btn-primary">Start planning</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Amberella Balloons</div>
+        <p style="color: rgba(253,248,241,0.7); max-width: 36ch;">Custom balloon decor and event rentals across the Greater Toronto & Hamilton Area.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="rentals.html">Rentals</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://instagram.com/amberellaballoons" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="contact.html">Book an event</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Amberella Balloons. All rights reserved.</div>
+      <div>Serving the Greater Toronto & Hamilton Area</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

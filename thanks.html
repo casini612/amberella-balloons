@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Thanks — Amberella Balloons</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="index.html" class="brand">Amberella Balloons</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="rentals.html">Rentals</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html" class="nav-cta">Book Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-hero" style="padding: 6rem 0;">
+  <div class="container" style="text-align: center;">
+    <span class="eyebrow" style="color: var(--amber-deep); font-size: 0.85rem; font-weight:500; letter-spacing: 0.12em; text-transform: uppercase;">Inquiry received</span>
+    <h1 style="margin-top: 0.8rem;">Thanks — we'll be in touch soon.</h1>
+    <p>Your message is on its way. Expect a reply within 24 hours (usually sooner). In the meantime, feel free to scroll through our recent work.</p>
+    <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+      <a href="gallery.html" class="btn btn-primary">See the gallery</a>
+      <a href="index.html" class="btn btn-outline">Back home</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> Amberella Balloons. All rights reserved.</div>
+      <div>Serving the Greater Toronto & Hamilton Area</div>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
